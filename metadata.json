@@ -1,0 +1,6 @@
+{
+  "name": "Albion Craft Master Pro",
+  "description": "An enterprise-grade Single Page Application for Albion Online crafting and sourcing calculations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

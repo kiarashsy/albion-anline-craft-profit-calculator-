@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-game-bg: #0b0f19;
+  --color-game-card: #151c2c;
+  --color-game-cyan: #00f0ff;
+  --color-game-amber: #ffaa00;
+  --color-game-border: #1f2937;
+}
+
+@layer base {
+  body {
+    @apply bg-game-bg text-gray-200 antialiased selection:bg-game-cyan selection:text-black;
+  }
+}
+
+@layer utilities {
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-scroll-marquee {
+    display: flex;
+    animation: marquee 25s linear infinite;
+  }
+}
